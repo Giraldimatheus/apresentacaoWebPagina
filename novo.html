@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Site  do Mat</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="informacoes"></div>
+                <nav>
+                    
+                    <h2 class="namem" id="nomeAtual">Matheus Giraldi</h2>
+                    <h3 class="name" id="tituloAtual">Desenvolvedor de Software</h3>
+                    <div>
+                            <a>
+                                <i class="fa fa-map-signs" aria-hidden="true" ></i>
+                                <p id="localizacaoAtual">86025-240 Londrina-PR</p>
+                            </a>
+                            
+                        <p id="idadeAtual">Idade: 28 anos</p>
+
+                    </div>
+                    
+
+                </nav>
+                <main>
+                    <br>
+                    <h4 class="subtitle">Biografia</h4>
+                    <section>
+                        <p  id="biografiaAtual">
+                            Olá! Sou o Matheus, estudante de programação! 
+                            Estou sempre buscando oportunidades para aprimorar minhas habilidades.
+                            Gosto de trabalhar em equipe e sou dedicado em aprender com meus colegas para contribuir em projetos desafiadores! 
+                            Além da minha paixão por programação, também sou um grande entusiasta da música.
+                            Estou animado em fazer parte de um mundo em constante evolução. 
+                            Se você está procurando por um profissional motivado e dedicado para a sua equipe, estou à disposição!
+                        </p>
+                    </section>
+                </main>
+                <div class="icones" align="center">
+                    <h4>Atuei em projetos com:</h4>
+                    <img align="center" alt="Matheus-C#" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
+                    <img align="center" alt="Matheus-Dotnet" height="35" width="45" src="https://cdn.iconscout.com/icon/free/png-512/microsoft-dotnet-1175177.png?f=avif&w=256">
+                    <img align="center" alt="Matheus-SQL" height="35" width="45" src="https://cdn-icons-png.flaticon.com/512/5815/5815478.png">
+                    <img align="center" alt="Matheus-Python" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+                    <img align="center" alt="Matheus-HTML" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                    <img align="center" alt="Matheus-CSS" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                    <img align="center" alt="Matheus-Js" height="35" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                    <img align="center" alt="Matheus-git" height="35" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"> 
+                  </div>
+                <footer>
+                    <a class="contato" href="https://github.com/Giraldimatheus" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/github.svg"></img>
+                        <p>Github</p>
+                    </a>
+                    <a class="contato" href="https://www.linkedin.com/in/matheus-h-favaro-giraldi-93684a141/" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/linkedin.svg"></img>
+                        <p>LinkedIn</p>
+                    </a>
+                </footer>
+                <!-- Button trigger modal -->
+
+                <div class="button-wrapper">
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+                      Atualizar informações
+                    </button>
+                  </div>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <h5 class="modal-title">Atualizar informações</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <label>Nome</label>
+                                    <input class="form-text" name="Nome" id="novoNome">
+                                </div>
+                                <div class="container-fluid">
+                                    <label>Tiulo</label>
+                                    <input class="form-text" name="Tiulo" id="novoTitulo">
+                                </div>
+                                <div class="container-fluid">
+                                    <label>Idade</label>
+                                    <input class="form-text" name="idade" id="novaIdade">
+                                </div>
+                                <div class="container-fluid">
+                                    <label>Localização</label>
+                                    <input class="form-text" name="Localização" id="novaLocalizacao">
+                                </div>
+                                <div class="container-fluid">
+                                    <label>Biografia</label>
+                                    <textarea name="" id="novaBiografia" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary" onclick="salvar()">Atualizar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6">
+                <header>
+                    <div class="img">
+                        <img src="./img/imagemMat.jpg" alt="">
+                    </div>
+                </header>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
