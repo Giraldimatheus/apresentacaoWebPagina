@@ -1,3 +1,3 @@
 # paginaWebApresentacao
 
-A pagina novo.html e a index =D
+A pagina novo.html é a index =D
